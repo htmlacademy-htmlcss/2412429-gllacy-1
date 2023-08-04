@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Лия](https://up.htmlacademy.ru/htmlcss-individual/1/user/2412429).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Ефимов](https://htmlacademy.ru/profile/efiand).
 
 ---
 
