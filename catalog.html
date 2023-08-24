@@ -29,7 +29,7 @@
             <a href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link" href="#!">
               <span class="visually-hidden">Поиск.</span>
             </a>
           </li>
@@ -45,89 +45,94 @@
       </nav>
     </header>
 
-
-    <main class="main-index">
+    <main class="main">
       <header class="header-inner">
         <h1 class="header-inner-title">Сливочное мороженое</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="#">Главная</a>
+            <a class="breadcrumbs-link" href="#!">Главная</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Каталог</a>
+            <a class="breadcrumbs-link" href="#!">Каталог</a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Сливочное мороженое</a>
           </li>
         </ul>
       </header>
+
       <section class="catalog-products">
         <h2 class="visually-hidden">Список товаров с фильтрами.</h2>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="popular">по популярности</option>
-          <option value="cheap">сначала дешевые</option>
-          <option value="expensive">сначала дорогие</option>
-        </select>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <label class="catalog-filter-group">
+            Сортировка:
+            <select class="select-control catalog-filter-list" name="sorting">
+              <option value="popular">по популярности</option>
+              <option value="cheap">сначала дешевые</option>
+              <option value="expensive">сначала дорогие</option>
+            </select>
+          </label>
+
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Наполнители</legend>
+            <legend class="catalog-filter-title">Наполнители:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="шоколадные" checked>
+                  <input class="control-input" type="checkbox" name="fillers" value="chocolate" checked>
                   шоколадные
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="сахарные посыпки" checked>
+                  <input class="control-input" type="checkbox" name="fillers" value="sugar" checked>
                   сахарные посыпки
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="фрукты">
+                  <input class="control-input" type="checkbox" name="fillers" value="fruits">
                   фрукты
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="сиропы">
+                  <input class="control-input" type="checkbox" name="fillers" value="syrups">
                   сиропы
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="джемы">
+                  <input class="control-input" type="checkbox" name="fillers" value="jams">
                   джемы
                 </label>
               </li>
             </ul>
           </fieldset>
+
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Жирность</legend>
+            <legend class="catalog-filter-title">Жирность:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="0%">
+                  <input class="control-input" type="radio" name="fat" value="0%">
                   0%
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="до 10%" checked>
+                  <input class="control-input" type="radio" name="fat" value="до 10%" checked>
                   до 10%
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="до 30%">
+                  <input class="control-input" type="radio" name="fat" value="до 30%">
                   до 30%
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="выше 30%">
+                  <input class="control-input" type="radio" name="fat" value="выше 30%">
                   выше 30%
                 </label>
               </li>
@@ -279,19 +284,19 @@
             </a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
+            <a class="pagination-link pagination-current">1.</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
+            <a class="pagination-link" href="#">2.</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
+            <a class="pagination-link" href="#">3.</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
+            <a class="pagination-link" href="#">4.</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">5</a>
+            <a class="pagination-link" href="#">5.</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link pagination-next" href="#">
@@ -299,7 +304,6 @@
             </a>
           </li>
         </ul>
-
       </section>
     </main>
 
@@ -324,32 +328,31 @@
           </li>
         </ul>
       </section>
+
       <ul class="link-list">
-        <li class="link-list-link">
-          <a class="link-list-footer" href="#!">
-            <b class="suppliers-text">Для поставщиков</b>
+        <li class="link-list-item">
+          <a class="link-list-link link-list-lead" href="#!">
+            Для поставщиков
           </a>
         </li>
-        <li class="link-list-link">
-          <a class="link-list-footer" href="#!">О производстве</a>
+        <li class="link-list-item">
+          <a class="link-list-link" href="#!">О производстве</a>
         </li>
-        <li class="link-list-link">
-          <a class="link-list-footer" href="#!">Наши документы</a>
+        <li class="link-list-item">
+          <a class="link-list-link" href="#!">Наши документы</a>
         </li>
-        <li class="link-list-link">
-          <a class="link-list-footer" href="#!">Экологические стандарты</a>
-        </li>
-        <li class="link-list-link">
-          <a class="link-list-footer" href="https://htmlacademy.ru">
-            <img class="footer-logo" src="" alt="Логотип академии.">
-          </a>
-        </li>
-        <li class="link-list-link">
-          <a class="link-list-footer" href="https://htmlacademy.ru/">
-            <p class="link">.Сделано в .html academy © 2021</p>
-          </a>
+        <li class="link-list-item">
+          <a class="link-list-link" href="#!">Экологические стандарты</a>
         </li>
       </ul>
+
+      <div>
+        <a class="link-list-footer" href="https://htmlacademy.ru">
+          <img class="footer-logo" src="" alt="Логотип академии.">
+        </a>
+
+        <p class="copyright">Сделано в <a href="https://htmlacademy.ru">.html academy</a> © 2021</p>
+      </div>
     </footer>
   </body>
 
