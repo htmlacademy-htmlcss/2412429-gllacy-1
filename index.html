@@ -53,7 +53,7 @@
           <span class="visually-hidden">Предыдущий товар.</span>
         </button>
 
-        <ul class="slider-pagination">
+        <ul class="pagination">
           <li class="slider-pagination-item">
             <img class="slider-image" src="" alt="Мороженое нежный пломбир с клубничным джемом.">
             <h3>Нежный пломбир с клубничным джемом.</h3>
@@ -126,7 +126,7 @@
             <h3>Малинка даром!</h3>
             <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья
               бесплатно.</p>
-            <a class="button button-present" href="#!">Хочу подарок!</a>
+            <a class="button present-button" href="#!">Хочу подарок!</a>
           </li>
           <li class="present-list-item">
             <h3>Маршмеллоу даром!</h3>
@@ -153,7 +153,7 @@
             </a>
           </li>
           <li class="product-card-item">
-            <a class="product-cards-link" href="#!">
+            <a class="product-card-link" href="#!">
               <img class="product-card-image" src="" alt="Шарик фисташкового пломбира с кусочками шоколада.">
               <h3 class="product-card-title">Фисташка</h3>
               <p class="product-card-text">Фисташковый пломбир с кусочками шоколада</p>
@@ -234,16 +234,17 @@
         <h2 class="contacts-user-title">Доставка любимого мороженого на дом</h2>
         <p>Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку
           мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
-        <form class="contacts-user-delivery" action="http://htmlacademy.ru" method="post">
-          <p class="delivery-form-date">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
+        <form class="delivery-form" action="http://htmlacademy.ru" method="post">
+          <p class="delivery-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+          <p class="delivery-description-date">
             <label for="delivery-date">Дата</label>
             <input type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
           </p>
-          <p class="delivery-form-phone">
+          <p class="delivery-description-phone">
             <label for="delivery-phone">Телефон</label>
             <input type="text" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
           </p>
-          <p class="delivery-form-address">
+          <p class="delivery-description-address">
             <label for="delivery-address">Адрес</label>
             <input type="text" id="delivery-address" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
           </p>
