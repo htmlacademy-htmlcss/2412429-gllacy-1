@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+
+}
+
+.page-header {
+  color: #2D3440;
+  background: #FEAFC3;
+}
+
+
+.navigation-link {
+  font-family: "inter";
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color:#2D3440;
+  background-color: #FEAFC3;
+  text-decoration: none;
+}
+
+.advantages {
+  color: #2D3440;
+  background-color: #FFFFFF;
+  background-image: url("../images/advantages/wafel.jpg");
+  align-self: stretch;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  padding: 24px;
+}
+
+.advantages-list {
+  color:#2D3440;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+}
+
+
+.advantages-GllacyShop {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  text-align: center;
+  color: #2D3440;
+  background-color: #FFFFFF;
+}
+
+
+.advantages-item {
+  text-align: left;
+}
+
+
+.advantages-destriction {
+  font-family: "inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  color: #565C66;
+  background-color: #FFFFFF;
+}
+
+
+.contacts {
+  background-image: url("../images/ice-cream-with-wafel-rolls.jpg");
+  width: 1170px;
+  height: 492px;
+  padding: 64px 763px 64px 64px;
+  align-items: center;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+}
+
+
+.contacts-title {
+  color: #565C66;
+}
+
+
+.contacts-text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #2D3440;
+}
+
+
+.contacts-link {
+  color: #2D3440;
+}
+
+
+.note {
+  font-size: 14px;
+  line-height: 20px;
+  color: #565C66;
+}
