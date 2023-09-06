@@ -47,6 +47,29 @@ body {
   text-decoration: none;
 }
 
+
+.presents {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  text-align: center;
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
+
+.present-options {
+  width: 570;
+  height: 268;
+  padding: 36px 200px 36px 36px;
+  border-radius: 16px;
+  color: #2D3440;
+  background-color: #F79;
+}
+
+
+
+
 .advantages {
   color: #2D3440;
   background-color: #FFFFFF;
@@ -124,4 +147,13 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #565C66;
+}
+
+
+.contacts-item {
+  width: 343px;
+  height: 364px;
+  border-radius: 8px;
+  background-color: #FCFCFC;
+  box-shadow: 0px 8px 16px 0px rgba(45, 52, 64, 0.12);
 }
