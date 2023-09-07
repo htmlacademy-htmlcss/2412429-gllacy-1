@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/inter-400.woff2") format("woff2");
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/inter-700.woff2") format("woff2");
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: "inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 900;
   src: url("../fonts/inter-900.woff2") format("woff2");
@@ -23,12 +23,11 @@
 }
 
 body {
-  font-family: "inter";
+  font-family: "Inter", sans-serif;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-
+  line-height: 1.375;
+  color: #2D3440;
+  background-color: #FEAFC3;
 }
 
 .page-header {
@@ -36,99 +35,147 @@ body {
   background: #FEAFC3;
 }
 
-
 .navigation-link {
-  font-family: "inter";
-  line-height: 20px;
-  font-weight: 400;
   text-align: center;
-  color:#2D3440;
-  background-color: #FEAFC3;
   text-decoration: none;
 }
 
-
-.presents {
-  font-size: 32px;
+.slider-text {
+  font-size: 36px;
   font-weight: 900;
   line-height: 46px;
+}
+
+.product-card-image {
+  border-radius: 50%;
+  align-items: center;
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
   text-align: center;
   color: #2D3440;
-  background-color: #FEAFC3;
 }
 
-
-.present-options {
-  width: 570;
-  height: 268;
-  padding: 36px 200px 36px 36px;
-  border-radius: 16px;
-  color: #2D3440;
-  background-color: #F79;
+.product-card-text {
+  text-align: center;
+  color: #565C66;
 }
 
+.product-card-price {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
 
-
+.slider-text-description {
+  font-size: 18px;
+  line-height: 24px;
+}
 
 .advantages {
-  color: #2D3440;
-  background-color: #FFFFFF;
   background-image: url("../images/advantages/wafel.jpg");
-  align-self: stretch;
   border-radius: 16px;
   background-repeat: no-repeat;
   padding: 24px;
 }
 
-.advantages-list {
-  color:#2D3440;
-  background-color: #FFFFFF;
+.advantages-wrapper {
+  padding: 56px 40px;
   border-radius: 16px;
+  background-color: #FFFFFF;
 }
 
-
-.advantages-GllacyShop {
-  font-family: "Inter", sans-serif;
+.advantages-title {
+  text-align: center;
   font-size: 32px;
   font-weight: 900;
   line-height: 46px;
-  text-align: center;
-  color: #2D3440;
-  background-color: #FFFFFF;
 }
 
-
-.advantages-item {
-  text-align: left;
+.blog {
+  background-image: url("../images/blog.jpg");
+  background-repeat: no-repeat;
+  padding: 32.59px 235px 67.15px 32px;
 }
 
+.text {
+  text-decoration: none;
+}
 
-.advantages-destriction {
-  font-family: "inter";
+.blog-text {
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
+  line-height: 20px;
   color: #565C66;
-  background-color: #FFFFFF;
 }
 
+.blog-text-title {
+ font-size: 24px;
+ font-weight: 700;
+ line-height: 30px;
+ color: #2D3440;
+}
 
-.contacts {
-  background-image: url("../images/ice-cream-with-wafel-rolls.jpg");
-  width: 1170px;
-  height: 492px;
-  padding: 64px 763px 64px 64px;
-  align-items: center;
+.link-list-link {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.newsletter {
+  background-image: url("../images/stripe.jpg");
   border-radius: 16px;
   background-repeat: no-repeat;
 }
 
+.newsletter-wrapper {
+  padding: 26px;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+}
+
+.contacts-user {
+  background-image: url("../images/ice-cream-and-fruits.jpg");
+  border-radius: 16px;
+  background-repeat: no-repeat;
+}
+
+.contacts-user-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.contacts-user-text {
+  color: #565C66;
+}
+
+.delivery-description {
+  color: #565C66
+}
+
+.delivery-contact {
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.contacts {
+  background-image: url("../images/ice-cream-with-wafel-rolls.jpg");
+  padding: 64px 763px 64px 64px;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+}
 
 .contacts-title {
   color: #565C66;
 }
-
 
 .contacts-text {
   font-size: 20px;
@@ -137,11 +184,10 @@ body {
   color: #2D3440;
 }
 
-
 .contacts-link {
   color: #2D3440;
+  text-decoration: none;
 }
-
 
 .note {
   font-size: 14px;
@@ -149,11 +195,7 @@ body {
   color: #565C66;
 }
 
-
 .contacts-item {
-  width: 343px;
-  height: 364px;
   border-radius: 8px;
   background-color: #FCFCFC;
-  box-shadow: 0px 8px 16px 0px rgba(45, 52, 64, 0.12);
 }
