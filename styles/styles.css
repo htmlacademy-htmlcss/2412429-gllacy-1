@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/inter-400.woff2") format("woff2");
@@ -28,11 +28,6 @@ body {
   line-height: 1.375;
   color: #2D3440;
   background-color: #FEAFC3;
-}
-
-.page-header {
-  color: #2D3440;
-  background: #FEAFC3;
 }
 
 .navigation-link {
@@ -102,10 +97,9 @@ body {
 .blog {
   background-image: url("../images/blog.jpg");
   background-repeat: no-repeat;
-  padding: 32.59px 235px 67.15px 32px;
 }
 
-.text {
+.blog-content {
   text-decoration: none;
 }
 
@@ -161,7 +155,17 @@ body {
   color: #565C66
 }
 
-.delivery-contact {
+.delivery-date {
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.delivery-phone {
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.delivery-address {
   font-weight: 700;
   line-height: 20px;
 }
