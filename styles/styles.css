@@ -22,15 +22,11 @@
   font-display: swap;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  min-height: 100vh;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 1.375;
@@ -76,6 +72,7 @@ body {
   margin-left: auto;
   list-style-type: none;
 }
+
 .navigation-user .navigation-link {
   min-width: 32px;
   min-height: 32px;
@@ -84,15 +81,6 @@ body {
 .header-logo {
   width: 137px;
   margin-right: 16px;
-}
-
-.main-container {
-  flex-grow: 1;
-}
-
-.page-container {
-  width: 1170px;
-  margin: 0 auto;
 }
 
 .page-header a {
@@ -105,8 +93,12 @@ body {
 .navigation-link-phone {
   display: block;
   font-weight: 700;
-  gap: 16px;
+}
 
+.main-container {
+  flex-grow: 1;
+  width: 1170px;
+  margin: 0 auto;
 }
 
 .slider-text {
@@ -120,36 +112,14 @@ body {
   line-height: 24px;
 }
 
-.products-title {
-  width: 527px;
-  font-size: 32px;
-  font-weight: 900;
-  line-height: 46px;
-  text-align: center;
-
-}
-
-.product-cards {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-}
-
 .present-list {
   display: flex;
-  width: 1170px;
-
+  list-style-type: none;
 }
 
 .button-present {
-  display: flex;
-  padding: 12px 32px;
-  width: 178px;
   font-weight: 700;
-  text-align: center;
+  padding: 12px 32px;
   color: #2D3440;
   background-color: #FCFCFC;
   border-radius: 26px;
@@ -162,6 +132,7 @@ body {
   font-weight: 900;
   line-height: 46px;
   text-align: center;
+  padding-bottom: 55px;
 }
 
 .present-name {
@@ -172,32 +143,43 @@ body {
 }
 
 .present-text {
-  width: 304px;
   padding: 36px 200px 36px 36px;
-
 }
 
 .present-list-item {
-  display: flex;
-  flex-direction: column;
   background-color: #FF7799;
   border-radius: 16px;
 }
 
+.products-title {
+  width: 527px;
+  margin: 0 auto;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 56px;
+}
 
-.index-columns {
-  display: flex;
-  justify-content: space-between;
+.product-cards {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 80px;
   gap: 30px;
 }
 
 .product-card-image {
   border-radius: 50%;
-  align-items: center;
 }
 
 .product-card-link {
   text-decoration: none;
+  text-align: center;
+  display: block;
 }
 
 .product-card-title {
@@ -252,12 +234,19 @@ body {
   width: 505px;
 }
 
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
 .blog {
   background-image: url("../images/blog.jpg");
   background-color: #FFFFFF;
   background-repeat: no-repeat;
   padding: 32px 235px 67px 32px;
   width: 570px;
+
 }
 
 .blog-content {
@@ -275,13 +264,6 @@ body {
   font-weight: 700;
   line-height: 30px;
   color: #2D3440;
-}
-
-.link-list-link {
-  font-size: 14px;
-  line-height: 20px;
-  color: #2D3440;
-  text-decoration: none;
 }
 
 .newsletter {
@@ -326,9 +308,13 @@ body {
 .delivery-form {
   width: calc(50% - 21px);
 }
+
 .contacts-wrapper {
   background-color: #FCFCFC;
   width: 343px;
+  height: 364px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(45, 52, 64, 0.12);
 }
 
 .contacts-user-title {
@@ -401,9 +387,16 @@ body {
   margin-right: 259px;
 }
 
+.link-list-link {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
 .footer-link {
   margin-left: auto;
-  max-width: 193;
+  max-width: 193px;
 }
 
 .header-inner-title {
@@ -414,6 +407,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -442,26 +436,10 @@ body {
   font-size: 14px;
 }
 
-.button {
-  font-size: 14px;
-  font-weight: 700;
-  text-align: center;
-  background-color: #FCFCFC 30%;
-  border-radius: 20px;
-}
-
 .button-pagination-show-more {
   font-size: 16px;
   font-weight: 700;
   text-align: center;
   border-radius: 26px;
   background-color: #FCFCFC;
-}
-
-.catalog-products {
-  display: flex;
-}
-
-.products-column {
-  width: 1170px;
 }
