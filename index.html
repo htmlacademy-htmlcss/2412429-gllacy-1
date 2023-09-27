@@ -46,10 +46,10 @@
       </nav>
     </header>
 
-    <main class="main-index">
+    <main class="main-container main-index">
       <h1 class="visually-hidden">GllacyShop.</h1>
       <section class="slider">
-        <h2 class="visually-hidden">Фотогалерея мороженного.</h2>
+        <h2 class="visually-hidden" hidden>Фотогалерея мороженного.</h2>
         <button class="slider-button slider-prev" type="button">
           <span class="visually-hidden">Предыдущий товар.</span>
         </button>
@@ -128,26 +128,26 @@
 
       <section class="present">
         <h2 class="present-heading">Заказывайте мороженое и получайте подарки!</h2>
-        <div class="present-wrapper">
-          <ul class="present-list">
-            <li class="present-list-item">
-              <h3 class="present-name">Малинка даром!</h3>
-              <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья
-                бесплатно.</p>
-              <a class="button button-present" href="#!">Хочу подарок!</a>
-            </li>
-            <li class="present-list-item">
-              <h3 class="present-name">Маршмеллоу даром!</h3>
-              <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.
-              </p>
-              <a class="button button-present" href="#!">Хочу подарок!</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="present-list">
+          <li class="present-list-item">
+            <h3 class="present-name">Малинка даром!</h3>
+            <p class="present-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового
+              варенья
+              бесплатно.</p>
+            <a class="button button-present" href="#!">Хочу подарок!</a>
+          </li>
+          <li class="present-list-item">
+            <h3 class="present-name">Маршмеллоу даром!</h3>
+            <p class="present-text">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно
+              бесплатно.
+            </p>
+            <a class="button button-present" href="#!">Хочу подарок!</a>
+          </li>
+        </ul>
       </section>
 
-      <section class="product-list">
-        <h2 class="products">Попробуйте самые популярные вкусы нашего мороженого</h2>
+      <section class="products">
+        <h2 class="products-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
         <ul class="product-cards">
           <li class="product-card-item">
             <a class="product-card-link" href="#!">
@@ -227,32 +227,37 @@
         </div>
       </section>
 
-      <section class="blog">
-        <a class="blog-content" href="#!">
-          <p class="blog-text">Новое в нашем блоге</p>
-          <h2 class="blog-text-title">10 способов сервировки фруктовых щербетов к столу</h2>
-        </a>
-      </section>
+      <div class="index-columns">
 
-      <section class="newsletter">
-        <h2 class="visually-hidden">Получайте лучшие предложения.</h2>
-        <div class="newsletter-wrapper">
-          <p class="newsletter-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного,
-            что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =&#41;</p>
-          <form class="newsletter-form" action="https://htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="newsletter-email">Email:</label>
-            <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
-              id="newsletter-email" required>
-            <button class="button newsletter-button" type="submit">Отправить</button>
-          </form>
-        </div>
-      </section>
+        <section class="blog">
+          <a class="blog-content" href="#!">
+            <p class="blog-text">Новое в нашем блоге</p>
+            <h2 class="blog-text-title">10 способов сервировки фруктовых щербетов к столу</h2>
+          </a>
+        </section>
+
+        <section class="newsletter">
+          <h2 class="visually-hidden">Получайте лучшие предложения.</h2>
+          <div class="newsletter-wrapper">
+            <p class="newsletter-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого
+              вкусного,
+              что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =&#41;</p>
+            <form class="newsletter-form" action="https://htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="newsletter-email">Email:</label>
+              <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
+                id="newsletter-email" required>
+              <button class="button newsletter-button" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+      </div>
 
       <section class="contacts-user">
-        <h2 class="contacts-user-title">Доставка любимого мороженого на дом</h2>
-        <p class="contacts-user-text">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите
-          доставку
-          мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+        <div class="contacts-user-content">
+          <h2 class="contacts-user-title">Доставка любимого мороженого на дом</h2>
+          <p class="contacts-user-text">Хочется полакомиться любимым десертом, но нет времени съездить в магазин?
+            Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+        </div>
         <form class="delivery-form" action="http://htmlacademy.ru" method="post">
           <p class="delivery-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить
             заказ.
@@ -271,7 +276,6 @@
           </p>
           <button class="button button-important" type="submit">Отправить</button>
         </form>
-
       </section>
 
       <section class="contacts">
@@ -296,50 +300,51 @@
     </main>
 
     <footer class="page-footer">
-      <section class="social">
-        <h2 class="visually-hidden">Наши контакты.</h2>
-        <ul class="social-list">
-          <li class="social-list-item">
-            <a class="button" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Телеграмм.</span>
+      <div class="page-footer-container">
+        <section class="social">
+          <h2 class="visually-hidden">Наши контакты.</h2>
+          <ul class="social-list">
+            <li class="social-list-item">
+              <a class="button" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Телеграмм.</span>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="button" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Вконтакте.</span>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Ютуб.</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <ul class="link-list">
+          <li class="link-list-item">
+            <a class="link-list-link link-list-lead" href="#!">
+              Для поставщиков
             </a>
           </li>
-          <li class="social-list-item">
-            <a class="button" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Вконтакте.</span>
-            </a>
+          <li class="link-list-item">
+            <a class="link-list-link" href="#!">О производстве</a>
           </li>
-          <li class="social-list-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Ютуб.</span>
-            </a>
+          <li class="link-list-item">
+            <a class="link-list-link" href="#!">Наши документы</a>
+          </li>
+          <li class="link-list-item">
+            <a class="link-list-link" href="#!">Экологические стандарты</a>
           </li>
         </ul>
-      </section>
 
-      <ul class="link-list">
-        <li class="link-list-item">
-          <a class="link-list-link link-list-lead" href="#!">
-            Для поставщиков
+        <div class="footer-link">
+          <a class="link-list-footer" href="https://htmlacademy.ru">
+            <img class="footer-logo" src="images/logo-htmlacademy.svg" width="93" height="27" alt="Логотип академии.">
           </a>
-        </li>
-        <li class="link-list-item">
-          <a class="link-list-link" href="#!">О производстве</a>
-        </li>
-        <li class="link-list-item">
-          <a class="link-list-link" href="#!">Наши документы</a>
-        </li>
-        <li class="link-list-item">
-          <a class="link-list-link" href="#!">Экологические стандарты</a>
-        </li>
-      </ul>
-
-      <div>
-        <a class="link-list-footer" href="https://htmlacademy.ru">
-          <img class="footer-logo" src="images/logo-htmlacademy.svg" width="93" height="27" alt="Логотип академии.">
-        </a>
-
-        <p class="copyright">Сделано в <a href="https://htmlacademy.ru">.html academy</a> © 2021</p>
+          <p class="copyright">Сделано в <a href="https://htmlacademy.ru">.html academy</a> © 2021</p>
+        </div>
       </div>
     </footer>
   </body>
