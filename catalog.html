@@ -77,7 +77,7 @@
 
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Наполнители:</legend>
-              <ul class="catalog-filter-list">
+              <ul class="catalog-filter-list-item">
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="fillers" value="chocolate" checked>
@@ -113,7 +113,7 @@
 
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Жирность:</legend>
-              <ul class="catalog-filter-list">
+              <ul class="catalog-filter-list-item">
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="fat" value="0%">
@@ -140,7 +140,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button" type="submit">Применить</button>
+            <button class="button-apply" type="submit">Применить</button>
           </form>
 
           <div class="products-column">
@@ -292,34 +292,36 @@
             </ul>
           </div>
 
-          <button class="button-pagination-show-more" type="button">Показать еще</button>
-          <ul class="slider-pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-prev pagination-disabled">
-                <span class="visually-hidden">Предыдущая страница.</span>
-              </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">5</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-next" href="#!">
-                <span class="visually-hidden">Следующая страница.</span>
-              </a>
-            </li>
-          </ul>
+          <div class="pagination-container">
+            <button class="button-pagination-show-more" type="button">Показать еще</button>
+            <ul class="slider-pagination">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-prev pagination-disabled">
+                  <span class="visually-hidden">Предыдущая страница.</span>
+                </a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">5</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-next" href="#!">
+                  <span class="visually-hidden">Следующая страница.</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
       </div>
     </main>
