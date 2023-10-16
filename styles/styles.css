@@ -182,7 +182,17 @@ body {
 }
 
 .present-button {
-  align-self: start
+  align-self: start;
+}
+
+.products-column {
+  padding: 44px 98px 16px 98px;
+}
+
+.product-card-item {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
 }
 
 .product-cards {
@@ -192,7 +202,14 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding-bottom: 80px;
-  gap: 30px;
+  gap: 40px 30px;
+}
+
+.product-cards-content {
+  padding: 16px 40px 24px 40px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .product-card-image {
@@ -211,17 +228,22 @@ body {
   line-height: 24px;
   text-align: center;
   color: #2D3440;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .product-card-text {
   text-align: center;
   color: #565C66;
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 
 .product-card-price {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+  margin-bottom: 24px;
 }
 
 .advantages {
@@ -316,22 +338,22 @@ body {
 }
 
 .contacts-user {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
   background-image: url("../images/ice-cream-and-fruits.jpg");
   border-radius: 16px;
   background-repeat: no-repeat;
-  display: flex;
-  flex-wrap: wrap;
   gap: 42px;
   padding: 64px;
   margin-bottom: 80px;
 }
 
-.contacts-user-content {
-  width: calc(50% - 21px);
-}
-
 .delivery-form {
-  width: calc(50% - 21px);
+  grid-template-columns: 117px 287px;
+  margin: 0;
+  padding: 40px;
+  display: grid;
+  gap: 32px 16px;
   background-color: #FCFCFC;
   border-radius: 8px;
 }
@@ -346,20 +368,25 @@ body {
   color: #565C66;
 }
 
-.delivery-description {
+.form-description {
+  grid-column: 1 / -1;
   color: #565C66
 }
 
-.delivery-description-date {
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
   font-weight: 700;
 }
 
-.delivery-description-phone {
-  font-weight: 700;
+.form-group.form-group-full {
+  grid-column: 1 / -1;
 }
 
-.delivery-description-address {
-  font-weight: 700;
+.form-button {
+  grid-column: 1 / -1;
+  justify-self: center
 }
 
 .contacts {
@@ -375,7 +402,7 @@ body {
   width: 253px;
   padding: 40px;
   border-radius: 8px;
-  box-shadow: 0px 8px 16px 0px rgba(45, 52, 64, 0.12);
+  box-shadow: 0 8px 16px 0 rgba(45, 52, 64, 0.12);
 }
 
 .contacts-list {
@@ -574,6 +601,7 @@ body {
 }
 
 .button-important {
+  justify-content: center;
   background-color: #FF2F64;
   color: #FCFCFC;
 }
