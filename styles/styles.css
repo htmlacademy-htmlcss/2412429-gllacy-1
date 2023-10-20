@@ -190,9 +190,12 @@ body {
 }
 
 .product-card-item {
-  width: 270px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 32px;
+  gap: 16px;
+  background-color: #FCFCFC;
+  border-radius: 8px;
+  padding: 24px 40px;
 }
 
 .product-cards {
@@ -202,14 +205,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding-bottom: 80px;
-  gap: 40px 30px;
-}
-
-.product-cards-content {
-  padding: 16px 40px 24px 40px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  gap: 90px 30px;
 }
 
 .product-card-image {
@@ -217,6 +213,7 @@ body {
 }
 
 .product-card-link {
+  grid-column: 1 / -1;
   text-decoration: none;
   text-align: center;
   display: block;
@@ -228,7 +225,7 @@ body {
   line-height: 24px;
   text-align: center;
   color: #2D3440;
-  margin-top: 0;
+  margin-top: 16px;
   margin-bottom: 8px;
 }
 
@@ -243,7 +240,13 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  margin-bottom: 24px;
+}
+
+.product-card-button {
+  background-color: #FF2F64;
+  width: 32px;
+  height: 32px;
+  border-radius: 26px;
 }
 
 .advantages {
@@ -282,23 +285,21 @@ body {
 
 .index-columns {
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   margin-bottom: 80px;
 }
 
 .blog {
-  display: flex;
-  flex-wrap: wrap;
   background-image: url("../images/blog.jpg");
   background-repeat: no-repeat;
+  background-color: #FFFFFF;
   border-radius: 16px;
-  width: 570px;
+  padding: 32px 235px 67px 32px;
 }
 
 .blog-content {
   text-decoration: none;
-  padding: 32px;
 }
 
 .blog-text {
@@ -314,19 +315,21 @@ body {
   font-weight: 700;
   line-height: 30px;
   color: #2D3440;
-  width: 303px;
   margin: 0;
 }
 
 .newsletter {
   background-image: url("../images/stripe.jpg");
-  border-radius: 16px;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  border-radius: 16px;
   padding: 6px;
 }
 
 .newsletter-wrapper {
-  flex-direction: column;
+  display: grid;
+  grid-column: 1 / -1;
   padding: 26px;
   border-radius: 16px;
   background-color: #FFFFFF;
@@ -339,6 +342,18 @@ body {
   margin-bottom: 42px;
 }
 
+.newsletter-form {
+  display: grid;
+  grid-template-columns: 1fr 152px;
+  gap: 18px;
+}
+
+.field {
+  padding: 13px 15px;
+  font-size: inherit;
+  line-height: 20px;
+}
+
 .form-wrapper {
   border-radius: 8px;
   background-color: #FCFCFC;
@@ -347,7 +362,7 @@ body {
 
 .contacts-user {
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
+  grid-template-columns: repeat(2, 1fr);
   background-image: url("../images/ice-cream-and-fruits.jpg");
   border-radius: 16px;
   background-repeat: no-repeat;
@@ -364,10 +379,6 @@ body {
   gap: 32px 16px;
   background-color: #FCFCFC;
   border-radius: 8px;
-}
-
-.field {
-  width: 332px;
 }
 
 .contacts-user-title {
@@ -545,6 +556,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  margin-bottom: 46px;
 }
 
 .catalog-filter-list {
@@ -585,11 +597,11 @@ body {
   font-size: 16px;
   font-weight: 700;
   border-radius: 26px;
-  background-color: #FCFCFC;
   padding: 12px 32px;
 }
 
 .pagination-container {
+  align-items: center;
   display: flex;
   padding: 40px;
 }
@@ -609,7 +621,10 @@ body {
   box-sizing: border-box;
   text-decoration: none;
   color: #2D3440;
-  margin-left: auto;
+  width: 24px;
+  height: 24px;
+  background-color: #FCFCFC;
+  border-radius: 50px;
 }
 
 .button {
@@ -626,7 +641,7 @@ body {
 }
 
 .button-important {
-  justify-content: center;
+  box-sizing: border-box;
   background-color: #FF2F64;
   color: #FCFCFC;
 }
