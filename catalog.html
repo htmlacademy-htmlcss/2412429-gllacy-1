@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="/favicon.ico">
   </head>
 
   <body>
@@ -29,16 +30,16 @@
             <div class="popover popover-catalog">
               <p class="popover-catalog-title">Новинки</p>
               <ul class="popover-catalog-list">
-                <li>
+                <li class="popover-catalog-link-list">
                   <a class="popover-catalog-link">Сливочное</a>
                 </li>
-                <li>
+                <li class="popover-catalog-link-list">
                   <a class="popover-catalog-link">Щербеты</a>
                 </li>
-                <li>
+                <li class="popover-catalog-link-list">
                   <a class="popover-catalog-link">Фруктовый лед</a>
                 </li>
-                <li>
+                <li class="popover-catalog-link-list">
                   <a class="popover-catalog-link">Мелорин</a>
                 </li>
               </ul>
@@ -85,26 +86,23 @@
               </svg>
               Вход
             </a>
-            <div class="popover popover-cart">
-
+            <div class="popover popover-login">
               <p class="popover-title">Личный кабинет</p>
-              <form class="login" action="https://echo.htmlacademy.ru/" method="post">
-                <p class="field-group">
+              <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+                <p class="field-group field-group-popover">
                   <label class="visually-hidden" for="login">Ваш логин</label>
-                  <input class="login-form-field field" type="email" id="login" name="login"
-                    placeholder="email@example.com">
+                  <input class="field" type="email" id="login" name="login" placeholder="email@example.com">
                 </p>
-                <p class="field-group">
+                <p class="field-group field-group-popover">
                   <label class="visually-hidden" for="password">Ваш пароль</label>
-                  <input class="login-form-field field" type="password" id="password" name="password">
+                  <input class="field" type="password" id="password" name="password">
                 </p>
               </form>
-
-              <div class="popover-link">
-                <a class="button button-important contacts-button" href="#!">Войти</a>
+              <div class="form-links">
+                <button class="button button-important form-login-button" type="submit">Войти</button>
                 <div>
-                  <a class="popover-link-list" href="#!">Забыли пароль?</a>
-                  <a class="popover-link-list" href="#!">Регистрация</a>
+                  <a class="form-links-list" href="#!">Забыли пароль?</a>
+                  <a class="form-links-list" href="#!">Регистрация</a>
                 </div>
               </div>
             </div>
@@ -119,18 +117,18 @@
             </a>
             <div class="popover">
 
-              <div class="popver-content">
+              <div class="popover-content">
                 <p class="popover-title">Корзина</p>
-                <ul class="basket-item-list">
+                <ul class="basket-list">
                   <li class="basket-item">
                     <img class="popover-image" src="images/catalog/ice-cream-catalog.jpg" width="46px" height="46px"
                       alt="Мороженое Малинка">
                     <div>
-                      <h3 class="basket-item-title">Малинка</h3>
+                      <p class="basket-item-title">Малинка</p>
                       <p class="basket-item-text">1 кг х 310 ₽</p>
                     </div>
                     <p class="basket-item-price">310 ₽</p>
-                    <button class="basket-item-button">
+                    <button class="basket-item-button" type="button">
                       <span class="visually-hidden">Удалить из корзины</span>
                     </button>
                   </li>
@@ -138,11 +136,11 @@
                     <img class="popover-image" src="images/catalog/ice-cream-catalog-4.jpg" width="46px" height="46px"
                       alt="Мороженое Бабл-гам">
                     <div>
-                      <h3 class="basket-item-title">Бабл-гам</h3>
+                      <p class="basket-item-title">Бабл-гам</p>
                       <p class="basket-item-text">1,5 кг х 320 ₽</p>
                     </div>
                     <p class="basket-item-price">480 ₽</p>
-                    <button class="basket-item-button">
+                    <button class="basket-item-button" type="button">
                       <span class="visually-hidden">Удалить из корзины</span>
                     </button>
                   </li>
@@ -202,12 +200,12 @@
 
               <div class="range catalog-filter-body">
                 <div class="range-scale">
-                  <div class="range-bar" style="left: 28px; width: 80px">
-                    <button class="range-toggle toggle-min">
+                  <div class="range-bar" style="left: 24px; width: 80px">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
 
-                    <button class="range-toggle toggle-max" style="left: 73px">
+                    <button class="range-toggle toggle-max" type="button" style="left: 73px">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
@@ -436,7 +434,7 @@
 
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled">
+            <a class="pagination-ring pagination-prev pagination-disabled">
               <span class="visually-hidden">Предыдущая страница.</span>
             </a>
           </li>
@@ -456,7 +454,7 @@
             <a class="pagination-link" href="#">5</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="#!">
+            <a class="pagination-ring pagination-next" href="#!">
               <span class="visually-hidden">Следующая страница.</span>
             </a>
           </li>
@@ -467,31 +465,33 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer-container-inner"->
+      <div class="page-footer-container-inner">
         <section class="social">
           <h2 class="visually-hidden">Наши контакты.</h2>
           <ul class="social-list">
             <li class="social-list-item">
-              <a class="social-button" href="https://t.me/htmlacademy">
+              <a class="social-link social-tg" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Телеграмм.</span>
               </a>
             </li>
             <li class="social-list-item">
-              <a class="social-button" href="https://vk.com/htmlacademy">
+              <a class="social-link social-vk" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Вконтакте.</span>
               </a>
             </li>
             <li class="social-list-item">
-              <a class="social-button" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Ютуб.</span>
               </a>
             </li>
           </ul>
         </section>
+        </section>
 
         <ul class="link-list">
           <li class="link-list-item">
             <a class="link-list-link link-list-lead" href="#!">
+              <img class="link-list-link-decor" src="./images/heart.svg" width="16" height="16" alt="сердце">
               Для поставщиков
             </a>
           </li>
