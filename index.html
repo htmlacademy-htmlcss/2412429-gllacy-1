@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <title>GllacyShop</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
   </head>
 
   <body>
@@ -30,16 +31,16 @@
             <div class="popover popover-catalog">
               <p class="popover-catalog-title">Новинки</p>
               <ul class="popover-catalog-list">
-                <li class="popover-catalog-link-list">
+                <li class="popover-catalog-link-item">
                   <a class="popover-catalog-link">Сливочное</a>
                 </li>
-                <li class="popover-catalog-link-list">
+                <li class="popover-catalog-link-item">
                   <a class="popover-catalog-link">Щербеты</a>
                 </li>
-                <li class="popover-catalog-link-list">
+                <li class="popover-catalog-link-item">
                   <a class="popover-catalog-link">Фруктовый лед</a>
                 </li>
-                <li class="popover-catalog-link-list">
+                <li class="popover-catalog-link-item">
                   <a class="popover-catalog-link">Мелорин</a>
                 </li>
               </ul>
@@ -70,7 +71,7 @@
               <form class="search" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="visually-hidden" for="search">Поиск по сайту</label>
                 <input class="search-field field" type="search" id="search" name="search" placeholder="Поиск по сайту">
-                <button class="search-reset" type="reset"><img src="./images/X.svg" width="16" height="16"></button>
+                <button class="search-reset" type="reset"></button>
               </form>
             </div>
           </li>
@@ -91,20 +92,20 @@
               <form class="form" action="https://echo.htmlacademy.ru/" method="post">
                 <p class="field-group field-group-popover">
                   <label class="visually-hidden" for="login">Ваш логин</label>
-                  <input class="field" type="email" id="login" name="login" placeholder="email@example.com">
+                  <input class="field" type="email" id="login" name="login" placeholder="email@example.com" required>
                 </p>
                 <p class="field-group field-group-popover">
                   <label class="visually-hidden" for="password">Ваш пароль</label>
-                  <input class="field" type="password" id="password" name="password">
+                  <input class="field" type="password" id="password" name="password" required>
                 </p>
-              </form>
-              <div class="form-links">
-                <button class="button button-important form-login-button" type="submit">Войти</button>
-                <div>
-                  <a class="form-links-list" href="#!">Забыли пароль?</a>
-                  <a class="form-links-list" href="#!">Регистрация</a>
+                <div class="form-links">
+                  <button class="button button-important form-login-button" type="submit">Войти</button>
+                  <div>
+                    <a class="form-links-list" href="#!">Забыли пароль?</a>
+                    <a class="form-links-list" href="#!">Регистрация</a>
+                  </div>
                 </div>
-              </div>
+              </form>
             </div>
           </li>
           <li class="navigation-item">
@@ -121,7 +122,7 @@
                 <p class="popover-title">Корзина</p>
                 <ul class="basket-list">
                   <li class="basket-item">
-                    <img class="popover-image" src="images/catalog/ice-cream-catalog.jpg" width="46px" height="46px"
+                    <img class="popover-image" src="images/catalog/ice-cream-catalog.jpg" width="46" height="46"
                       alt="Мороженое Малинка">
                     <div>
                       <p class="basket-item-title">Малинка</p>
@@ -133,7 +134,7 @@
                     </button>
                   </li>
                   <li class="basket-item">
-                    <img class="popover-image" src="images/catalog/ice-cream-catalog-4.jpg" width="46px" height="46px"
+                    <img class="popover-image" src="images/catalog/ice-cream-catalog-4.jpg" width="46" height="46"
                       alt="Мороженое Бабл-гам">
                     <div>
                       <p class="basket-item-title">Бабл-гам</p>
@@ -150,7 +151,7 @@
                   <p class="basket-item-price">Итого: 790 ₽</p>
                 </div>
                 <!-- Разметка при отсутствии товаров
-                  <div class="popover popover-empty">
+                <div class="popover popover-empty">
                   <p class="popover-title popover-title-empty">Ваша корзина пока пуста</p>
                 </div> -->
               </div>
@@ -176,7 +177,7 @@
                 </p>
                 <a class="button slider-button" href="#!">Заказать</a>
               </div>
-              <div class="slider-wrapper-wrapper">
+              <div class="slider-image-wrapper">
                 <img class="slider-image" src="images/gallery/ice-cream-gallery-3.png" width="327" height="507"
                   alt="Мороженое нежный пломбир с клубничным джемом.">
               </div>
@@ -189,7 +190,7 @@
                   жаркий летний день.</p>
                 <a class="button slider-button" href="#!">Заказать</a>
               </div>
-              <div class="slider-wrapper-wrapper">
+              <div class="slider-image-wrapper">
                 <img class="slider-image" src="images/gallery/ice-cream-gallery-2.png" width="312" height="507"
                   alt="Сливочное мороженое со вкусом банана.">
               </div>
@@ -202,7 +203,7 @@
                   всех возрастов.</p>
                 <a class="button slider-button" href="#!">Заказать</a>
               </div>
-              <div class="slider-wrapper-wrapper">
+              <div class="slider-image-wrapper">
                 <img class="slider-image" src="images/gallery/ice-cream-gallery-3.png" width="350" height="507"
                   alt="Мороженое карамельный пломбир с маршмеллоу.">
               </div>
@@ -279,7 +280,7 @@
               банку&nbsp;малинового
               варенья
               бесплатно.</p>
-            <a class="button button-present" href="#!">Хочу подарок</a>
+            <a class="button present-button" href="#!">Хочу подарок</a>
           </li>
           <li class="present-list-item present-list-item-two-background">
             <h3 class="present-name">Маршмеллоу даром!</h3>
@@ -287,7 +288,7 @@
               совершенно
               бесплатно.
             </p>
-            <a class="button button-present" href="#!">Хочу подарок</a>
+            <a class="button present-button" href="#!">Хочу подарок</a>
           </li>
         </ul>
       </section>
@@ -412,7 +413,7 @@
           </p>
           <p class="form-group">
             <span class="form-label">
-              <label for="form-label">Дата</label>
+              <label for="form-date">Дата</label>
               <span class="tooltip">
                 <button class="tooltip-toggle" type="button">
                   <svg class="tooltip-icon" width="14" height="14" fill="currentColor"
@@ -427,12 +428,12 @@
             <input class="field" id="form-date" type="text" name="form-date" placeholder="01.04.2020" required>
           </p>
           <p class="form-group">
-            <label for="form-label">Телефон</label>
+            <label for="form-phone">Телефон</label>
             <input class="field" id="form-phone" type="tel" name="form-phone" placeholder="+7 800 999-00-00" required>
           </p>
           <p class="form-group form-group-full">
             <span class="form-label">
-              <label for="form-label">Адрес</label>
+              <label for="form-address">Адрес</label>
               <span class="tooltip">
                 <button class="tooltip-toggle" type="button">
                   <svg class="tooltip-icon" width="14" height="14" fill="currentColor"
@@ -457,8 +458,8 @@
         <div class="contacts-wrapper">
           <ul class="contacts-list">
             <li class="contacts-list-item">
-              <h3 class="contacts-title">Адрес главного офиса <br> и офлайн-магазина:</br></h3>
-              <p class="contacts-text contacts-text-adress">наб. реки Карповки, <br> 5 лит П, Санкт-Петербург</br></p>
+              <h3 class="contacts-title">Адрес главного офиса <br> и офлайн-магазина:</h3>
+              <p class="contacts-text contacts-text-adress">наб. реки Карповки, <br> 5 лит П, Санкт-Петербург</p>
             </li>
             <li class="contacts-list-item">
               <h3 class="contacts-title">Для заказов по телефону:</h3>
@@ -500,7 +501,7 @@
         <ul class="link-list">
           <li class="link-list-item">
             <a class="link-list-link link-list-lead" href="#!">
-              <img class="link-list-link-decor" src="./images/heart.svg" width="16" height="16" alt="сердце">
+              <span class="decor-icon"></span>
               Для поставщиков
             </a>
           </li>
@@ -524,7 +525,7 @@
       </div>
     </footer>
 
-    <div class="modal-container">
+    <div class="modal-container modal-hidden">
       <div class="modal">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -535,15 +536,14 @@
             <p class="field-group field-group-popover">
               <label class="visually-hidden" for="name">Имя и фамилия</label>
               <input class="field" type="text" id="name" name="name" placeholder="Имя и фамилия" required>
-
             </p>
             <p class="field-group field-group-popover">
               <label class="visually-hidden" for="email">email@example.com</label>
-              <input class="field" type="email" id="mail" name="email" placeholder="email@example.com" required>
+              <input class="field" type="email" id="email" name="email" placeholder="email@example.com" required>
             </p>
             <p class="field-group field-group-popover">
               <label class="visually-hidden" for="text">Оставьте свой комментарий</label>
-              <textarea class="field field-multiline" type="text" id="text" name="text"
+              <textarea class="field field-multiline" id="text" name="text"
                 placeholder="В свободной форме"></textarea>
             </p>
             <button class="button button-important button-modal" type="submit">Отправить</button>
