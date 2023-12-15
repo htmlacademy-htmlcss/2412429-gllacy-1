@@ -447,6 +447,19 @@ body {
   background: rgba(252, 252, 252, 0.5);
 }
 
+.social {
+  margin-right: auto;
+}
+
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 12px;
+}
+
 .social-link {
   display: block;
   width: 24px;
@@ -454,25 +467,6 @@ body {
   color: #FCFCFC;
   border-radius: 50%;
   border: 2px solid rgba(252, 252, 252, 0.3);
-}
-
-.social-link:hover,
-.social-link:active {
-  background: #2D3440;
-  border-color: rgba(252, 252, 252, 0.5);
-}
-
-.social-link:active {
-  opacity: 0.5;
-}
-
-.social-link:focus-visible {
-  background: #2D3440;
-  border-color: #2D3440;
-}
-
-.social-list-first {
-  justify-content: flex-end;
 }
 
 .social-link::before {
@@ -499,11 +493,23 @@ body {
   mask-image: url("../images/social/youtube.svg");
 }
 
-.social-link:disabled {
-  color: #FCFCFC;
-  background-color: #2D3440;
+.social-link:hover,
+.social-link:active {
+  background: #2D3440;
   border-color: rgba(252, 252, 252, 0.5);
+}
+
+.social-link:active {
   opacity: 0.5;
+}
+
+.social-link:focus-visible {
+  background: #2D3440;
+  border-color: #2D3440;
+}
+
+.social-list-first {
+  justify-content: flex-end;
 }
 
 .present-list {
@@ -1070,19 +1076,6 @@ body {
   display: flex;
   width: 1170px;
   margin: 0 auto;
-}
-
-.social {
-  margin-right: auto;
-}
-
-.social-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  gap: 12px;
 }
 
 .link-list {
