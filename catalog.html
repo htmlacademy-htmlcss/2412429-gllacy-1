@@ -6,7 +6,7 @@
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" type="images/png" href="images/favicon.png">
   </head>
 
   <body>
@@ -17,7 +17,7 @@
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-catalog" href="catalog.html">
+            <a class="navigation-link navigation-link-catalog navigation-link-catalog-current" href="catalog.html">
               Каталог
               <svg class="navigation-icon-arrow" aria-hidden="true" focusable="false" width="16" height="16"
                 xmlns="http://www.w3.org/2000/svg">
@@ -32,16 +32,16 @@
               <p class="popover-catalog-title">Новинки</p>
               <ul class="popover-catalog-list">
                 <li class="popover-catalog-link-item">
-                  <a class="popover-catalog-link">Сливочное</a>
+                  <a class="popover-catalog-link" href="#!">Сливочное</a>
                 </li>
                 <li class="popover-catalog-link-item">
-                  <a class="popover-catalog-link">Щербеты</a>
+                  <a class="popover-catalog-link" href="#!">Щербеты</a>
                 </li>
                 <li class="popover-catalog-link-item">
-                  <a class="popover-catalog-link">Фруктовый лед</a>
+                  <a class="popover-catalog-link" href="#!">Фруктовый лед</a>
                 </li>
                 <li class="popover-catalog-link-item">
-                  <a class="popover-catalog-link">Мелорин</a>
+                  <a class="popover-catalog-link" href="#!">Мелорин</a>
                 </li>
               </ul>
             </div>
@@ -71,7 +71,9 @@
               <form class="search" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="visually-hidden" for="search">Поиск по сайту</label>
                 <input class="search-field field" type="search" id="search" name="search" placeholder="Поиск по сайту">
-                <button class="search-reset" type="reset">Удалить</button>
+                <button class="search-reset" type="reset">
+                  <span class="visually-hidden">Удалить</span>
+                </button>
               </form>
             </div>
           </li>
@@ -98,14 +100,14 @@
                   <label class="visually-hidden" for="password">Ваш пароль</label>
                   <input class="field" type="password" id="password" name="password" required>
                 </p>
+                <div class="form-links">
+                  <button class="button button-important form-login-button" type="submit">Войти</button>
+                  <div>
+                    <a class="form-links-list" href="#!">Забыли пароль?</a>
+                    <a class="form-links-list" href="#!">Регистрация</a>
+                  </div>
               </form>
-              <div class="form-links">
-                <button class="button button-important form-login-button" type="submit">Войти</button>
-                <div>
-                  <a class="form-links-list" href="#!">Забыли пароль?</a>
-                  <a class="form-links-list" href="#!">Регистрация</a>
-                </div>
-              </div>
+            </div>
             </div>
           </li>
           <li class="navigation-item">
@@ -466,7 +468,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer-container-inner">
+      <div class="page-footer-container page-footer-container-inner ">
         <section class="social">
           <h2 class="visually-hidden">Наши контакты.</h2>
           <ul class="social-list">
@@ -491,7 +493,6 @@
         <ul class="link-list">
           <li class="link-list-item">
             <a class="link-list-link link-list-lead" href="#!">
-              <span class="decor-icon"></span>
               Для поставщиков
             </a>
           </li>
