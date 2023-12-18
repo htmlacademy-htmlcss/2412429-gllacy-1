@@ -235,27 +235,21 @@ body {
 .popover-catalog-link {
   text-decoration: none;
   color: currentColor;
-}
-
-.popover-catalog-link-item:hover {
-  background-color: #FFCBD8;
-}
-
-.popover-catalog-link-item:active {
-  background-color: #FF7799;
-}
-
-.popover-catalog-link-item {
-  list-style-type: none;
-  padding-left: 16px;
+  display: block;
   padding: 6px 16px;
-  white-space: nowrap;
   font-size: 14px;
-  font-weight: 400;
   line-height: 20px;
 }
 
-.popover-catalog-link-item-current {
+.popover-catalog-link:hover {
+  background-color: #FFCBD8;
+}
+
+.popover-catalog-link:active {
+  background-color: #FF7799;
+}
+
+.popover-catalog-link-current {
   background-color: #FF4A78;
   color: #FCFCFC;
 }
@@ -554,7 +548,13 @@ body {
 }
 
 .slider-pagination-button:focus-visible {
+  background: rgba(252, 252, 252, 0.3);
+  outline: 1px solid #2D3440;
+}
+
+.slider-pagination-button:active {
   background: #FCFCFC;
+  opacity: 0.5;
 }
 
 .slider-pagination-button-current {
