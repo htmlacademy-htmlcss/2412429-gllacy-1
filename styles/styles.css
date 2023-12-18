@@ -241,11 +241,11 @@ body {
   line-height: 20px;
 }
 
-.popover-catalog-link:hover {
+.popover-catalog-link[href]:hover {
   background-color: #FFCBD8;
 }
 
-.popover-catalog-link:active {
+.popover-catalog-link[href]:active {
   background-color: #FF7799;
 }
 
@@ -1119,7 +1119,7 @@ body {
   font-weight: 400;
   text-transform: none;
   padding: 10px 15px 10px 8px;
-  border-radius: 8px;
+  border-radius: 3px;
   width: 146px;
   bottom: 100%;
   position: relative;
@@ -1129,6 +1129,7 @@ body {
   stroke: #B9B9B9;
   border: 1px solid #B9B9B9;
   filter: drop-shadow(0 4px 8px rgba(194, 194, 194, 0.20));
+  z-index: 1;
 }
 
 .tooltip-text::before {
@@ -1140,8 +1141,8 @@ body {
   height: 7px;
   transform: rotate(45deg);
   position: absolute;
-  top: 22%;
-  right: 98%;
+  top: 12px;
+  left: -5px;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
