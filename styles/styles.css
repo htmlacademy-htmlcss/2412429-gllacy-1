@@ -32,8 +32,7 @@ body {
   font-size: 16px;
   line-height: 1.375;
   color: #2D3440;
-  background-color: #FEAFC3;
-  /* background-color: var(--page-bg, #FEAFC3); js меняет значение --page-bg */
+  background-color: var(--page-bg, #FEAFC3); /* js меняет значение --page-bg */
 }
 
 .visually-hidden {
@@ -353,6 +352,9 @@ body {
 
 .slider-wrapper {
   overflow-x: hidden;
+}
+
+.slider {
   position: relative;
 }
 
@@ -370,11 +372,17 @@ body {
   list-style-type: none;
   align-items: center;
   gap: 25px;
+  visibility: hidden;
+}
+
+.slider-list-item-current {
+  visibility: visible;
 }
 
 .slider-images-text {
   padding-left: 70px;
   width: 450px;
+  flex-shrink: 0;
 }
 
 .slider-text {
@@ -396,6 +404,10 @@ body {
   padding-top: 16px;
 }
 
+.slider-image-wrapper {
+  position: relative;
+}
+
 .slider-image-wrapper::before {
   content: "";
   width: 327px;
@@ -404,8 +416,9 @@ body {
   position: absolute;
   background: rgba(255, 255, 255, 0.3);
   top: 50%;
-  transform: translate(0, -51%);
+  transform: translate(0, -50%);
   z-index: -1;
+  margin-top: 8px;
 }
 
 .slider-pagination-item {
@@ -433,6 +446,7 @@ body {
   opacity: 0.4;
   background-size: contain;
   background-repeat: no-repeat;
+  outline-offset: -2px;
 }
 
 .slider-image-button::before {
@@ -461,7 +475,7 @@ body {
 
 .wrapper {
   display: flex;
-  margin-top: -6px;
+  margin-top: -3px;
 }
 
 .slider-control {
@@ -474,7 +488,7 @@ body {
   border: 2px solid #FCFCFC;
   background: rgba(252, 252, 252, 0.3);
   position: absolute;
-  top: 49%;
+  top: 50%;
   transform: translateY(-50%);
   color: #FCFCFC;
 }
@@ -484,6 +498,12 @@ body {
   color: #2D3440;
 }
 
+.slider-control:active {
+  background: rgba(252, 252, 252, 0.5);
+  color: #2D3440;
+  border: none;
+}
+
 .slider-control:disabled {
   opacity: 0.4;
 }
@@ -491,6 +511,7 @@ body {
 .slider-control:focus-visible {
   color: #2D3440;
   background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #2D3440;
 }
 
 .slider-prev {
@@ -635,7 +656,7 @@ body {
   line-height: 46px;
   text-align: center;
   margin-bottom: 55px;
-  margin-top: 82px;
+  margin-top: 78px;
 }
 
 .present-name {
@@ -656,7 +677,7 @@ body {
   font-weight: 900;
   line-height: 46px;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 81px;
   padding-bottom: 54px;
 }
 

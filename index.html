@@ -59,7 +59,7 @@
             <a class="navigation-link-phone" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-search" href="#!">
+            <a class="navigation-link navigation-link-icon navigation-link-search" href="#!">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -98,7 +98,8 @@
                 </p>
                 <p class="field-group field-group-popover">
                   <label class="visually-hidden" for="password">Ваш пароль</label>
-                  <input class="field" type="password" id="password" name="password" placeholder="Введите пароль" required>
+                  <input class="field" type="password" id="password" name="password" placeholder="Введите пароль"
+                    required>
                 </p>
                 <div class="form-links">
                   <button class="button button-important form-login-button" type="submit">Войти</button>
@@ -178,7 +179,7 @@
 
         <div class="slider-wrapper">
           <ul class="slider-list">
-            <li class="slider-list-item">
+            <li class="slider-list-item slider-list-item-current">
               <div class="slider-images-text">
                 <h3 class="slider-text">Нежный пломбир с&nbsp;клубничным джемом</h3>
                 <p class="slider-text-description">
@@ -200,6 +201,27 @@
                 </button>
               </div>
             </li>
+
+            <button class="slider-control slider-prev" type="button">
+              <svg class="slider-arrow" aria-hidden="true" focusable="false" width="16" height="16"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.8033 3.80515c.2597-.2597.2597-.68076 0-.94045-.25969-.2597-.68075-.2597-.94045
+      0L4.19477 7.53277c-.25884.25885-.25969.67798-.00256.93788.00117.00118.00233.00236.00351.00353L8.8638
+      13.1423c.25969.2597.68075.2597.94045 0 .25965-.2597.25965-.6808 0-.9405l-4.1988-4.19879L9.8033 3.80515Z" />
+              </svg>
+              <span class="visually-hidden">Предыдущий товар.</span>
+            </button>
+
+            <button class="slider-control slider-next" type="button">
+              <svg class="slider-arrow" aria-hidden="true" focusable="false" width="16" height="16"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.13526 2.8647c-.25969-.2597-.68075-.2597-.94045 0-.2597.25969-.2597.68075
+      0 .94045l4.20129 4.20128-4.20133 4.20127c-.25969.2597-.25969.6808 0 .9405.2597.2597.68076.2597.94046
+      0l4.66867-4.66871c.001-.00094.0019-.00188.0029-.00283.2597-.2597.2597-.68075 0-.94045L7.13526 2.8647Z" />
+              </svg>
+              <span class="visually-hidden">Следующий товар.</span>
+            </button>
+
             <li class="slider-list-item">
               <div class="slider-images-text">
                 <h3 class="slider-text">Сливочное мороженое со вкусом банана</h3>
@@ -209,7 +231,7 @@
                 <a class="button slider-button" href="#!">Заказать</a>
               </div>
               <div class="slider-image-wrapper">
-                <img class="slider-image" src="images/gallery/ice-cream-gallery-2.png" width="312" height="507"
+                <img class="slider-image" src="images/gallery/ice-cream-gallery-2.png" width="327" height="507"
                   alt="Сливочное мороженое со вкусом банана.">
               </div>
               <div class="slider-image-buttons">
@@ -230,7 +252,7 @@
                 <a class="button slider-button" href="#!">Заказать</a>
               </div>
               <div class="slider-image-wrapper">
-                <img class="slider-image" src="images/gallery/ice-cream-gallery-3.png" width="350" height="507"
+                <img class="slider-image" src="images/gallery/ice-cream-gallery-3.png" width="327" height="507"
                   alt="Мороженое карамельный пломбир с маршмеллоу.">
               </div>
               <div class="slider-image-buttons">
@@ -243,67 +265,46 @@
               </div>
             </li>
           </ul>
-
-          <button class="slider-control slider-prev" type="button">
-            <svg class="slider-arrow" aria-hidden="true" focusable="false" width="16" height="16"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.8033 3.80515c.2597-.2597.2597-.68076 0-.94045-.25969-.2597-.68075-.2597-.94045
-      0L4.19477 7.53277c-.25884.25885-.25969.67798-.00256.93788.00117.00118.00233.00236.00351.00353L8.8638
-      13.1423c.25969.2597.68075.2597.94045 0 .25965-.2597.25965-.6808 0-.9405l-4.1988-4.19879L9.8033 3.80515Z" />
-            </svg>
-            <span class="visually-hidden">Предыдущий товар.</span>
-          </button>
-
-          <button class="slider-control slider-next" type="button">
-            <svg class="slider-arrow" aria-hidden="true" focusable="false" width="16" height="16"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M7.13526 2.8647c-.25969-.2597-.68075-.2597-.94045 0-.2597.25969-.2597.68075
-      0 .94045l4.20129 4.20128-4.20133 4.20127c-.25969.2597-.25969.6808 0 .9405.2597.2597.68076.2597.94046
-      0l4.66867-4.66871c.001-.00094.0019-.00188.0029-.00283.2597-.2597.2597-.68075 0-.94045L7.13526 2.8647Z" />
-            </svg>
-            <span class="visually-hidden">Следующий товар.</span>
-          </button>
-
-          <div class="wrapper">
-            <ol class="slider-pagination">
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button slider-pagination-button-current" type="button" data-to="1">
-                  <span class="visually-hidden">Слайд 1.</span>
-                </button>
-              </li>
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button" data-to="2">
-                  <span class="visually-hidden">Слайд 2.</span>
-                </button>
-              </li>
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button" data-to="3">
-                  <span class="visually-hidden">Слайд 3.</span>
-                </button>
-              </li>
-            </ol>
-
-
-            <ul class="social-list social-list-first">
-              <li class="social-list-item">
-                <a class="social-link social-tg" href="https://t.me/htmlacademy">
-                  <span class="visually-hidden">Телеграмм.</span>
-                </a>
-              </li>
-              <li class="social-list-item">
-                <a class="social-link social-vk" href="https://vk.com/htmlacademy">
-                  <span class="visually-hidden">Вконтакте.</span>
-                </a>
-              </li>
-              <li class="social-list-item">
-                <a class="social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru">
-                  <span class="visually-hidden">Ютуб.</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-
         </div>
+
+        <div class="wrapper">
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button" data-to="1">
+                <span class="visually-hidden">Слайд 1.</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button" data-to="2">
+                <span class="visually-hidden">Слайд 2.</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button" data-to="3">
+                <span class="visually-hidden">Слайд 3.</span>
+              </button>
+            </li>
+          </ol>
+
+          <ul class="social-list social-list-first">
+            <li class="social-list-item">
+              <a class="social-link social-tg" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Телеграмм.</span>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-link social-vk" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Вконтакте.</span>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Ютуб.</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
       </section>
       <section class="present">
         <h2 class="present-heading">Заказывайте мороженое и&nbsp;получайте подарки!</h2>
