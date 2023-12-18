@@ -232,6 +232,11 @@ body {
   list-style-type: none;
 }
 
+.popover-catalog-link {
+  text-decoration: none;
+  color: currentColor;
+}
+
 .popover-catalog-link-item:hover {
   background-color: #FFCBD8;
 }
@@ -250,9 +255,9 @@ body {
   line-height: 20px;
 }
 
-.popover-catalog-link {
-  text-decoration: none;
-  color: #2D3440;
+.popover-catalog-link-item-current {
+  background-color: #FF4A78;
+  color: #FCFCFC;
 }
 
 .popover-content {
@@ -491,6 +496,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   color: #FCFCFC;
+  outline: none;
 }
 
 .slider-control:hover {
@@ -540,6 +546,7 @@ body {
   background: rgba(252, 252, 252, 0.3);
   border-radius: 100px;
   border: none;
+  outline: none;
 }
 
 .slider-pagination-button:hover {
@@ -760,6 +767,7 @@ body {
   width: 32px;
   height: 32px;
   border-radius: 26px;
+  border: none;
 }
 
 .product-card-button::before {
@@ -776,6 +784,7 @@ body {
   background-color: #FCFCFC;
   color: #2D3440;
   outline: 2px solid #FF2F64;
+  outline-offset: -2px;
 }
 
 .product-card-button::before:hover {
@@ -788,6 +797,7 @@ body {
 .product-card-button:active {
   background-color: #FFCBD8;
   outline: 2px solid #FF2F64;
+  outline-offset: -2px;
   color: #2D3440;
 }
 
@@ -802,6 +812,7 @@ body {
   background-color: #FF2F64;
   color: #FCFCFC;
   outline: 2px solid #2D3440;
+  outline-offset: -2px;
 }
 
 .product-card-button:disabled {
@@ -1601,7 +1612,7 @@ body {
   appearance: none;
   background-image: url("../images/arrow/down.svg");
   background-repeat: no-repeat;
-  background-position: right 8px center
+  background-position: right 8px center;
 }
 
 .select-control:focus-visible {
@@ -1656,6 +1667,7 @@ body {
   min-width: 24px;
   text-align: center;
   border-radius: 12px;
+  border: none;
 }
 
 .pagination-prev {
@@ -1686,17 +1698,20 @@ body {
 }
 
 .pagination-link:focus-visible {
-  background-color: #FCFCFC;
+  background: rgba(252, 252, 252, 0.3);
+  outline: 1px solid #2D3440;
+  outline-offset: -1px;
 }
 
 .pagination-link:hover {
   background: rgba(252, 252, 252, 0.5);
-  }
+}
 
-  .pagination-link:active {
-    background: rgba(252, 252, 252, 0.5);
-    outline: 1px solid #FCFCFC;
-  }
+.pagination-link:active {
+  background: rgba(252, 252, 252, 0.5);
+  outline: 1px solid #FCFCFC;
+  outline-offset: -1px;
+}
 
 .pagination-disabled {
   opacity: 0.3;
@@ -1752,6 +1767,7 @@ body {
   background-color: #FF2F64;
   color: #FCFCFC;
   outline: 4px solid rgba(255, 47, 100, 0.3);
+  outline-offset: -2px;
 }
 
 .button-important:hover {
