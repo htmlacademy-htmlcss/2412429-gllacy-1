@@ -447,16 +447,16 @@ body {
   background: rgba(255, 255, 255, 0.3);
   z-index: -1;
 }
-.slider-image-button-two {
-  background-image: url("../images/gallery/ice-cream-gallery.png");
-}
-
-.slider-image-button-three {
+.slider-image-button-2 {
   background-image: url("../images/gallery/ice-cream-gallery-2.png");
 }
 
-.slider-image-button-first {
-  background-image: url("../images/gallery/ice-cream-gallery.png");
+.slider-image-button-3 {
+  background-image: url("../images/gallery/ice-cream-gallery-3.png");
+}
+
+.slider-image-button-1 {
+  background-image: url("../images/gallery/ice-cream-gallery-1.png");
 }
 
 .wrapper {
@@ -582,7 +582,7 @@ body {
 .social-link:hover,
 .social-link:active {
   background: #2D3440;
-  border-color: rgba(252, 252, 252, 0.5);
+  outline-color: rgba(252, 252, 252, 0.5);
 }
 
 .social-link:active {
@@ -591,7 +591,7 @@ body {
 
 .social-link:focus-visible {
   background: #2D3440;
-  border-color: #2D3440;
+  outline-color: #2D3440;
 }
 
 .social-list-first {
@@ -808,7 +808,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 24px;
-  margin-bottom: 80px;
+  margin-bottom: 78px;
 }
 
 .advantages-wrapper {
@@ -1239,6 +1239,8 @@ body {
   display: grid;
   margin-left: auto;
   max-width: 193px;
+  align-content: start;
+  gap: 8px;
 }
 
 .popover-search {
@@ -1626,7 +1628,6 @@ body {
 
 .pagination-link {
   display: block;
-  padding: 2px 8px;
   box-sizing: border-box;
   text-decoration: none;
   color: #2D3440;
@@ -1634,7 +1635,7 @@ body {
   min-width: 24px;
   text-align: center;
   border-radius: 12px;
-  }
+}
 
 .pagination-prev {
   background-image: url("../images/arrow/left.svg");
@@ -1660,6 +1661,7 @@ body {
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position: center;
+  margin-left: 3px;
 }
 
 .pagination-link:focus-visible {

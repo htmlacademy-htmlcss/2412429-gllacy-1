@@ -98,7 +98,7 @@
                 </p>
                 <p class="field-group field-group-popover">
                   <label class="visually-hidden" for="password">Ваш пароль</label>
-                  <input class="field" type="password" id="password" name="password" required>
+                  <input class="field" type="password" id="password" name="password" placeholder="Введите пароль" required>
                 </p>
                 <div class="form-links">
                   <button class="button button-important form-login-button" type="submit">Войти</button>
@@ -188,14 +188,14 @@
                 <a class="button slider-button" href="#!">Заказать</a>
               </div>
               <div class="slider-image-wrapper">
-                <img class="slider-image" src="images/gallery/ice-cream-gallery-3.png" width="327" height="507"
+                <img class="slider-image" src="images/gallery/ice-cream-gallery-1.png" width="327" height="507"
                   alt="Мороженое нежный пломбир с клубничным джемом.">
               </div>
               <div class="slider-image-buttons">
-                <button class="slider-image-button slider-image-button-two">
+                <button class="slider-image-button slider-image-button-2" type="button" data-to="2">
                   <span class="visually-hidden">Сливочное мороженое со вкусом банана.</span>
                 </button>
-                <button class="slider-image-button slider-image-button-three">
+                <button class="slider-image-button slider-image-button-3" type="button" data-to="3">
                   <span class="visually-hidden">Мороженое карамельный пломбир с маршмеллоу.</span>
                 </button>
               </div>
@@ -213,10 +213,10 @@
                   alt="Сливочное мороженое со вкусом банана.">
               </div>
               <div class="slider-image-buttons">
-                <button class="slider-image-button slider-image-button-three">
+                <button class="slider-image-button slider-image-button-3" type="button" data-to="3">
                   <span class="visually-hidden">Мороженое карамельный пломбир с маршмеллоу.</span>
                 </button>
-                <button class="slider-image-button slider-image-button-first">
+                <button class="slider-image-button slider-image-button-1" type="button" data-to="1">
                   <span class="visually-hidden">Мороженое нежный пломбир с клубничным джемом.</span>
                 </button>
               </div>
@@ -234,10 +234,10 @@
                   alt="Мороженое карамельный пломбир с маршмеллоу.">
               </div>
               <div class="slider-image-buttons">
-                <button class="slider-image-button slider-image-button-first">
+                <button class="slider-image-button slider-image-button-1" type="button" data-to="1">
                   <span class="visually-hidden">Мороженое нежный пломбир с клубничным джемом.</span>
                 </button>
-                <button class="slider-image-button slider-image-button-two">
+                <button class="slider-image-button slider-image-button-2" type="button" data-to="2">
                   <span class="visually-hidden">Сливочное мороженое со вкусом банана.</span>
                 </button>
               </div>
@@ -267,17 +267,17 @@
           <div class="wrapper">
             <ol class="slider-pagination">
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <button class="slider-pagination-button slider-pagination-button-current" type="button" data-to="1">
                   <span class="visually-hidden">Слайд 1.</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
+                <button class="slider-pagination-button" type="button" data-to="2">
                   <span class="visually-hidden">Слайд 2.</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
+                <button class="slider-pagination-button" type="button" data-to="3">
                   <span class="visually-hidden">Слайд 3.</span>
                 </button>
               </li>
@@ -583,6 +583,7 @@
         </section>
       </div>
     </div>
+    <script src="./scripts/scripts.js"></script>
 
   </body>
 
