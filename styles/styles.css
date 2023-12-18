@@ -33,6 +33,7 @@ body {
   line-height: 1.375;
   color: #2D3440;
   background-color: #FEAFC3;
+  /* background-color: var(--page-bg, #FEAFC3); js меняет значение --page-bg */
 }
 
 .visually-hidden {
@@ -93,7 +94,7 @@ body {
   text-decoration: none;
 }
 
-.current {
+.navigation-link-current {
   background-color: #FF4A78;
   color: #FCFCFC;
 }
@@ -415,9 +416,45 @@ body {
   margin-right: 8px;
 }
 
+.slider-image-buttons {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  gap: 40px;
+}
+
+.slider-image-button {
+  width: 100px;
+  height: 150px;
+  background: transparent;
+  border: none;
+  opacity: 0.4;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.slider-image-button-two {
+  background-image: url("../images/gallery/ice-cream-gallery.png");
+}
+
+.slider-image-button-three {
+  background-image: url("../images/gallery/ice-cream-gallery-2.png");
+}
+
+.slider-image-button-two::before,
+.slider-image-button-three::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-4%, 22%);
+  z-index: -1;
+}
+
 .wrapper {
   display: flex;
-  margin-top: -8px;
+  margin-top: -6px;
 }
 
 .slider-control {
@@ -499,7 +536,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  gap: 12px;
+  gap: 16px;
 }
 
 .social-link {
@@ -612,7 +649,7 @@ body {
   font-weight: 900;
   line-height: 46px;
   text-align: center;
-  padding-top: 79px;
+  padding-top: 80px;
   padding-bottom: 54px;
 }
 
@@ -726,7 +763,7 @@ body {
   color: #2D3440;
 }
 
-.product-card-button::before:active {
+.product-card-button:active::before {
   content: "";
   background-color: currentColor;
   -webkit-mask-image: url("../images/basket.svg");
@@ -739,19 +776,19 @@ body {
   outline: 2px solid #2D3440;
 }
 
-.product-card-button::before:focus-visible {
-  content: "";
-  background-color: currentColor;
-  -webkit-mask-image: url("../images/basket.svg");
-  mask-image: url("../images/basket.svg");
-}
-
 .product-card-button:disabled {
   background-color: #B9B9B9;
   color: #565C66;
 }
 
 .product-card-button::before:disabled {
+  content: "";
+  background-color: currentColor;
+  -webkit-mask-image: url("../images/basket.svg");
+  mask-image: url("../images/basket.svg");
+}
+
+.product-card-button::before:focus-visible {
   content: "";
   background-color: currentColor;
   -webkit-mask-image: url("../images/basket.svg");
@@ -775,7 +812,7 @@ body {
 
 .advantages-title {
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: 58px;
   text-align: center;
   font-size: 32px;
   font-weight: 900;
@@ -849,7 +886,7 @@ body {
   line-height: 20px;
   color: #565C66;
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 }
 
 .blog-text-title {
@@ -907,6 +944,12 @@ body {
   outline-offset: -1px;
 }
 
+.field:focus-visible {
+  color: #2D3440;
+  outline: 2px solid #2D3440;
+  outline-offset: -2px;
+}
+
 .field:hover {
   outline: 1px solid #2D3440;
   outline-offset: -1px;
@@ -927,15 +970,9 @@ body {
 }
 
 .field:disabled,
-.field:disabled:focus-visible {
+.field:disabled:hover {
   outline: 1px solid #B9B9B9;
   outline-offset: -1px;
-}
-
-.field:focus-visible {
-  color: #2D3440;
-  outline: 2px solid #2D3440;
-  outline-offset: -2px;
 }
 
 .field::placeholder {
@@ -1033,7 +1070,6 @@ body {
   margin: 0;
   display: block;
   color: inherit;
-
 }
 
 .tooltip-text {
@@ -1587,10 +1623,11 @@ body {
   box-sizing: border-box;
   text-decoration: none;
   color: #2D3440;
-  width: 24px;
   height: 24px;
-  border-radius: 50px;
-}
+  min-width: 24px;
+  text-align: center;
+  border-radius: 12px;
+  }
 
 .pagination-prev {
   background-image: url("../images/arrow/left.svg");
@@ -1618,20 +1655,18 @@ body {
   background-position: center;
 }
 
-.pagination-link:hover {
-  min-width: 24px;
-  height: 24px;
-  padding: 2px 8px;
-  background: rgba(252, 252, 252, 0.5);
-}
-
 .pagination-link:focus-visible {
   background-color: #FCFCFC;
-  width: 24px;
-  height: 24px;
-  align-items: center;
-  padding: 2px 8px;
 }
+
+.pagination-link:hover {
+  background: rgba(252, 252, 252, 0.5);
+  }
+
+  .pagination-link:active {
+    background: rgba(252, 252, 252, 0.5);
+    outline: 1px solid #FCFCFC;
+  }
 
 .pagination-disabled {
   opacity: 0.3;
@@ -1640,10 +1675,6 @@ body {
 
 .pagination-current {
   background-color: #FCFCFC;
-  width: 24px;
-  height: 24px;
-  align-items: center;
-  padding: 2px 8px;
 }
 
 .button {
