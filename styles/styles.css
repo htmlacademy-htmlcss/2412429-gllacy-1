@@ -420,9 +420,12 @@ body {
   display: grid;
   grid-template-columns: 100px 100px;
   gap: 40px;
+  margin-left: 33px;
+  margin-top: 16px;
 }
 
 .slider-image-button {
+  position: relative;
   width: 100px;
   height: 150px;
   background: transparent;
@@ -432,6 +435,18 @@ body {
   background-repeat: no-repeat;
 }
 
+.slider-image-button::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.3);
+  z-index: -1;
+}
 .slider-image-button-two {
   background-image: url("../images/gallery/ice-cream-gallery.png");
 }
@@ -440,16 +455,8 @@ body {
   background-image: url("../images/gallery/ice-cream-gallery-2.png");
 }
 
-.slider-image-button-two::before,
-.slider-image-button-three::before {
-  content: "";
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  position: absolute;
-  background: rgba(255, 255, 255, 0.3);
-  transform: translate(-4%, 22%);
-  z-index: -1;
+.slider-image-button-first {
+  background-image: url("../images/gallery/ice-cream-gallery.png");
 }
 
 .wrapper {
