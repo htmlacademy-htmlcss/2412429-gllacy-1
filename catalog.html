@@ -70,7 +70,7 @@
             <div class="popover popover-search">
               <form class="search" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="visually-hidden" for="search">Поиск по сайту</label>
-                <input class="search-field field" type="search" id="search" name="search" placeholder="Поиск по сайту">
+                <input class="search-field field" type="search" id="search" name="search" placeholder="Поиск по сайту" required>
                 <button class="search-reset" type="reset">
                   <span class="visually-hidden">Очистить</span>
                 </button>
@@ -98,7 +98,7 @@
                 </p>
                 <p class="field-group field-group-popover">
                   <label class="visually-hidden" for="password">Ваш пароль</label>
-                  <input class="field" type="password" id="password" name="password" required>
+                  <input class="field" type="password" id="password" name="password" placeholder="Введите пароль" required>
                 </p>
                 <div class="form-links">
                   <button class="button button-important form-login-button" type="submit">Войти</button>
@@ -218,7 +218,7 @@
 
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Жирность:</legend>
-              <ul class="catalog-filter-list catalog-filter-body">
+              <ul class="catalog-filter-list catalog-filter-body catalog-filter-radiobuttons">
                 <li class="catalog-filter-list-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="fat" value="0%">
@@ -248,7 +248,7 @@
 
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Наполнители:</legend>
-              <ul class="catalog-filter-list catalog-filter-body">
+              <ul class="catalog-filter-list catalog-filter-body catalog-filter-checkboxes">
                 <li class="catalog-filter-list-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="fillers" value="chocolate" checked>
