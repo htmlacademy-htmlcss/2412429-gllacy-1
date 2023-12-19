@@ -62,7 +62,7 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 5px;
+  margin: 0 20px 5px 0;
   padding: 0;
   list-style-type: none;
 }
@@ -261,13 +261,13 @@ body {
   gap: 32px;
 }
 
-/* Стили для пустой корзины поповера
+/* Стили для пустой корзины поповера */
 .popover-empty {
   width: 288px;
   min-height: 156px;
   display: grid;
   justify-items: center;
-} */
+}
 
 .basket-list {
   padding: 0;
@@ -643,19 +643,17 @@ body {
   padding: 36px 200px 36px 36px;
   background-color: #ff7799;
   border-radius: 16px;
-  align-items: flex-start;
+  align-content: flex-start;
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .present-list-item-one-background {
   background-image: url("../images/razz.png");
-  background-repeat: no-repeat;
-  background-position: right;
 }
 
 .present-list-item-two-background {
   background-image: url("../images/marshmallow.png");
-  background-repeat: no-repeat;
-  background-position: right;
 }
 
 .present-heading {
@@ -1033,7 +1031,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-image: url("../images/ice-cream-and-fruits.jpg");
-  background-color: #fcfcfc;
+  background-color: #ff95b0;
   border-radius: 16px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1161,7 +1159,7 @@ body {
   border-radius: 16px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #fcfcfc;
+  background-color: #ff95b0;
 }
 
 
@@ -1359,12 +1357,11 @@ body {
 
 .modal-close-button {
   position: absolute;
-  margin: 44px;
-  top: 0;
-  right: 0;
+  top: 44px;
+  right: 44px;
   width: 20px;
   height: 20px;
-  background-color: #fcfcfc;
+  background-color: #fcfcfcc7;
   border: none;
   background-image: url("../images/catalog/X-bold.svg");
   background-repeat: no-repeat;
@@ -1534,7 +1531,7 @@ body {
 }
 
 .catalog-filter-group {
-  align-self: flex-end;
+  align-self: flex-start;
   font-size: 14px;
   margin: 0;
   padding: 0;
@@ -1601,8 +1598,12 @@ body {
   padding: 8px 18px;
 }
 
-.catalog-filter-content {
-  max-width: 915px;
+.catalog-filter-radiobuttons {
+  max-width: 383px;
+}
+
+.catalog-filter-checkboxes {
+  max-width: 604px;
 }
 
 .range-wrapper-inputs {
